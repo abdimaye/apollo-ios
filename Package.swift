@@ -36,16 +36,13 @@ let package = Package(
     .package(
       url: "https://github.com/stencilproject/Stencil.git",
       .upToNextMinor(from: "0.14.0")),
-    .package(
-      url: "https://github.com/apple/swift-crypto.git",
-      .upToNextMinor(from: "1.1.2")),
     .package(url: "https://github.com/jernejstrasner/CCommonCrypto.git", .branch("master"))
     ],
     targets: [
       .target(
         name: "ApolloCore",
         dependencies: [
-          .product(name: "Crypto", package: "swift-crypto"),
+          
         ]),
     .target(
       name: "Apollo",
