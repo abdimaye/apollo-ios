@@ -2,7 +2,7 @@ import Foundation
 #if canImport(CommonCrypto)
 import CommonCrypto
 #else
-import Crypto
+import CCommonCrypto
 #endif
 
 extension String: ApolloCompatible {}

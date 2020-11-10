@@ -38,7 +38,8 @@ let package = Package(
       .upToNextMinor(from: "0.14.0")),
     .package(
       url: "https://github.com/apple/swift-crypto.git",
-      .upToNextMinor(from: "1.1.2"))
+      .upToNextMinor(from: "1.1.2")),
+    .package(url: "https://github.com/jernejstrasner/CCommonCrypto.git", .branch("master"))
     ],
     targets: [
       .target(
