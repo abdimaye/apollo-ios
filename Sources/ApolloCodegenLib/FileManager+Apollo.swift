@@ -1,5 +1,9 @@
 import Foundation
+#if canImport(CommonCrypto)
 import CommonCrypto
+#else
+import Crypto
+#endif
 #if !COCOAPODS
 import ApolloCore
 #endif
