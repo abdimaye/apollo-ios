@@ -1,7 +1,7 @@
 import Foundation
 
 #if os(Linux)
-import CryptoKit
+import Crypto
 public struct Crypt: CryptoProtocol {
     
     public init() {}
